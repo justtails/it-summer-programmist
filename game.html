@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>IT-Лето. Курс "Программист"</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="its-main">
+            <div class="its-header its-flex-basis">
+                <div class="its-logo-block">
+                    <img src="images/it-summer-logo.png">
+                </div>            
+                <div class="its-nav-block">
+                    <ul class="its-nav">
+                        <li><a href="./index.html">Главная</a></li>
+                        <li><a href="./game.html">Игра</a></li>
+                        <!--li><a href="#">Контакты</a></li>
+                        <li><a href="#">О сайте</a></li-->
+                    </ul>
+                </div>
+            </div>
+            <div class="its-main its-main-backgrnd its-flex-basis">
+                <div class="its-flex-basis its-main-block">
+                    <div class="its-flex-basis">
+                        <h1>Игра "Накликай печенек!"</h1>
+                        <p>Правила просты: нажми на кнопку Старт и кликай по печеньке. Но следи за временем, оно постоянно убегает.</p>
+                        <p>Посмотрим, сколько печенек ты сможешь накликать!</p>
+                        <p>Твой последний результат: <span id="final-res"></span></p>
+                        </div>
+                    <div class="its-flex-basis cookie-game">
+                        <div id="game-stat">
+                            <div id="cookie-count">0 печенек</div>
+                            <div id="game-time">Время: 0 с</div>
+                        </div>
+                        <div id="click-cookie" onclick="OnCookieClick()">
+                            <img src="images/cookie.png">
+                        </div>
+                        <div id="start-btn" onclick="OnStartClick()">СТАРТ</div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
